@@ -17,6 +17,6 @@ app.use('/', function(req, res) {
   res.send("Uh oh")
 })
 
-app.listen(80, function() {
+app.listen(443, function() {
   console.log("starting at 8000");
 })
