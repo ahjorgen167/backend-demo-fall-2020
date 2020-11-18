@@ -13,6 +13,10 @@ app.use(cookieParser());
 
 app.use('/users', usersRouter);
 
+app.use('/', function(req, res) {
+  res.send("Uh oh")
+})
+
 app.listen(443, function() {
   console.log("starting at 8000");
 })
