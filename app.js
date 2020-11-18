@@ -16,7 +16,7 @@ app.use('/users', usersRouter);
 app.use('/', function(req, res) {
   res.send("Uh oh")
 })
-
-app.listen(443, function() {
-  console.log("starting at 8000");
+const port = process.env.PORT || 3000;
+app.listen(port, function() {
+  console.log("starting at" + port);
 })
